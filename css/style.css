@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Roboto+Mono:wght@100;200;300&family=Roboto:wght@100;300;400&display=swap");
+
+h1,
+h3 {
+  font-family: "Libre Caslon Display", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #416337;
+}
+
+#home {
+  text-align: center;
+  width: 50rem;
+  margin: 50 auto;
+  height: 100vh;
+}
+
+#homeHeader {
+  margin-bottom: 2.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#blog {
+  margin-top: 5rem;
+  color: white;
+}
+
+#blog {
+  margin-top: 5rem;
+}
+
+#outCard {
+  background-color: #b8ba80;
+  margin: 0 auto;
+  padding: 2.5rem;
+  width: 60rem;
+}
+
+#inCard {
+  border: white solid 5px;
+  padding: 4rem 6rem;
+}
+
+#blog div p {
+  text-indent: 3.5rem;
+  font-size: 1.15rem;
+}
+
+#lifestyle {
+  margin-top: 5rem;
+}
+
+#lifestyle img {
+  width: 100px;
+}
+
+#game {
+  margin: 0 auto;
+  width: 35rem;
+}
+
+#blogBody {
+  background-image: url("../images/bg.jpg");
+  background-size: contain;
+}
+
+#lifestyleBody {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-sm p {
+  font-size: 0.75rem;
+}
+
+#reference {
+  margin: 0 2.5rem;
+  background-color: #d9e1bc;
+}
+
+#reference ol li {
+  font-size: 0.5em;
+}
