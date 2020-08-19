@@ -1,23 +1,36 @@
+var audio = new Audio("../sound/tada.mp3");
+var audio2 = new Audio("../sound/sad.mp3");
+
 function checkQ1() {
-  if (document.getElementById("30").checked)
+  if (document.getElementById("30").checked) {
     document.getElementById("q1Correct").innerHTML = "✓";
-  else if (document.getElementById("50").checked)
+    audio.play();
+  } else if (document.getElementById("50").checked) {
     document.getElementById("q1Wrong1").innerHTML = "✘";
-  else if (document.getElementById("18").checked)
+    audio2.play();
+  } else if (document.getElementById("18").checked) {
     document.getElementById("q1Wrong2").innerHTML = "✘";
-  else if (document.getElementById("25").checked)
+    audio2.play();
+  } else if (document.getElementById("25").checked) {
     document.getElementById("q1Wrong3").innerHTML = "✘";
+    audio2.play();
+  }
 }
 
 function checkQ2() {
-  if (document.getElementById("airline").checked)
+  if (document.getElementById("airline").checked) {
     document.getElementById("q2Correct").innerHTML = "✓";
-  else if (document.getElementById("bus").checked)
+    audio.play();
+  } else if (document.getElementById("bus").checked) {
     document.getElementById("q2Wrong1").innerHTML = "✘";
-  else if (document.getElementById("vehicle").checked)
+    audio2.play();
+  } else if (document.getElementById("vehicle").checked) {
     document.getElementById("q2Wrong2").innerHTML = "✘";
-  else if (document.getElementById("walking").checked)
+    audio2.play();
+  } else if (document.getElementById("walking").checked) {
     document.getElementById("q2Wrong3").innerHTML = "✘";
+    audio2.play();
+  }
 }
 
 function checkQ3() {
@@ -44,4 +57,12 @@ function checkQ3() {
     document.getElementById("q3answer3").innerHTML = "✘";
     document.getElementById("q3answer3").style.color = "red";
   }
+
+  if (
+    document.getElementById("destruction").checked &&
+    document.getElementById("increase").checked &&
+    document.getElementById("crowded").checked
+  ) {
+    audio.play();
+  } else audio2.play();
 }
